@@ -1,0 +1,42 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a [routerLink]="['/movies']">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ movie.title }}</li>
+    </ol>
+</nav>
+
+<div class="row mt-5">
+  <div class="col blog-main">
+    <h3 class="pb-4 mb-4 font-italic border-bottom">
+      {{ movie.title }} [{{ movie.year }}]
+      <a (click)="addToFav(movie.id)"><img src="../../../assets/add-to-fav.png" alt="Add to Favourites" width="32"></a> |
+      <a (click)="removeFromFav(movie.id)"><img src="../../../assets/remove-from-fav.png" alt="Remove from Favourites" width="32"></a>
+    </h3>
+
+    <div class="blog-post">
+      <h2 class="blog-post-title">Storyline</h2>
+      <p>{{ movie.plot }}</p>
+      <hr>
+      <p class="blog-post-meta">Rated: {{ movie.rated }}</p>
+      <hr>
+      <p class="blog-post-meta">Released: {{ movie.released }}</p>
+      <hr>
+      <p class="blog-post-meta">Runtime: {{ movie.runtime }}</p>
+      <hr>
+      <p class="blog-post-meta">Genre: {{ movie.genre }}</p>
+      <hr>
+      <p class="blog-post-meta">Director: {{ movie.director }}</p>
+      <hr>
+      <p class="blog-post-meta">Writer: {{ movie.writer }}</p>
+      <hr>
+      <p class="blog-post-meta">Actors: {{ movie.actors }}</p>
+      <hr>
+      <p class="blog-post-meta">Language: {{ movie.language }}</p>
+      <hr>
+      <p class="blog-post-meta">Country: {{ movie.country }}</p>
+      <hr>
+      <p class="blog-post-meta">Awards: {{ movie.awards }}</p>
+      <hr>
+    </div>
+  </div>
+</div>

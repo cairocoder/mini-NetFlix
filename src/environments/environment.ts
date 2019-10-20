@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: 'AIzaSyBjZCfX3ROmPigjsiDKwMFu4qrDyZeBssw',
+    authDomain: 'mini-netflix-4f0cc.firebaseapp.com',
+    databaseURL: 'https://mini-netflix-4f0cc.firebaseio.com',
+    projectId: 'mini-netflix-4f0cc',
+    storageBucket: 'mini-netflix-4f0cc.appspot.com',
+    messagingSenderId: '928152076496',
+    appId: '1:928152076496:web:715b0c993bfaff41e35ed5',
+    measurementId: 'G-RSWDM9JHME'
+  }
 };
 
 /*
